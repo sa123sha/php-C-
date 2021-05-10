@@ -1,0 +1,12 @@
+09.05.2021 17:23:16 Exception: Файл 'D:\dial.csv' не найден.
+09.05.2021 19:13:57 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:14:15 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:24:12 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:26:37 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:29:23 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:29:30 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:30:34 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:32:20 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:33:30 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:35:32 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+09.05.2021 19:39:28 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
