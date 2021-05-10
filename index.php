@@ -187,7 +187,7 @@ class CForWriteInFile
 
         try
         {
-            $fd = fopen("D:\\conf_path.ini", 'r') or die("");
+            $fd = fopen("conf_path.ini", 'r') or die("");
             while (!feof($fd))
             {
                 $line = fgets($fd);
@@ -217,7 +217,7 @@ class CForWriteInFile
     
     public function read_files_ats($path, $date_prev, $date_now, & $result)
     {
-        echo $path;
+        //echo $path;
         try
         {
             $fd = fopen($path, "r")or die();
@@ -436,12 +436,12 @@ echo "{$prev_y}{$prev_m}{$prev_d}\n";
 echo "{$now_y}{$now_m}{$now_d}\n";
 echo "{$sec_prev} = {$sec_now}\n";
 
-            
+$temp = CForWriteInFile::$conf_path[2];           
 $result = "";
 try
 {
-    $class1->read_files_ats("d:/{$prev_y}{$prev_m}{$prev_d}.txt", $sec_prev, $sec_now, $result);
-    $class1->read_files_ats("d:/{$now_y}{$now_m}{$now_d}.txt", $sec_prev, $sec_now, $result);
+    $class1->read_files_ats("{$temp}{$prev_y}{$prev_m}{$prev_d}.txt", $sec_prev, $sec_now, $result);
+    $class1->read_files_ats("{$temp}{$now_y}{$now_m}{$now_d}.txt", $sec_prev, $sec_now, $result);
 
     try
     {
