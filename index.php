@@ -334,7 +334,8 @@ class CForWriteInFile
         $i = 0;
         try
         {
-            $fd = fopen(self::$conf_path[1],'r')or die;
+            $fd = fopen(self::$conf_path[1],'r');
+             if(!$fd)throw new Exception("some text");
             
             while (!feof($fd))
             {
@@ -385,9 +386,9 @@ class CForWriteInFile
     {
         $date = new DateTime();
         //$date = $date->now();
-        echo "Exception:  {$e->getMessage} {$date}";
+        echo "Exception:  {$e->getMessage()}";
         $fd = fopen($str, 'a')or die;
-        fputs($fd, "{date} Exception: {$e->getMessage}");
+        fputs($fd, "Exception: {$e->getMessage()}");
         fclose($fd);
 
         /*if (!Directory.Exists("err"))
@@ -396,7 +397,7 @@ class CForWriteInFile
         }*/
 
         $fd = fopen("err\\error.txt", 'a')or die;
-        fputs($fd, "{date} Exception: {$e->getMessage}");
+        fputs($fd, "Exception: {$e->getMessage()}");
         fclose($fd);
     }
 }
