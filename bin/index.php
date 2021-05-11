@@ -182,12 +182,13 @@ class CForWriteInFile
 
     public function read_conf_path()
     {
+        $string = "D:\\test\\";
         $line = "";
         $i = 0;
 
         try
         {
-            $fd = fopen("conf_path.ini", 'r') or die("");
+            $fd = fopen("{$string}conf_path.ini", 'r') or die("");
             while (!feof($fd))
             {
                 $line = fgets($fd);
@@ -207,7 +208,7 @@ class CForWriteInFile
             //$date = $date->Now;
             echo "Exception: {$e->getMessage} {$date}";
             
-            $fd = fopen("err\\error.txt",'a')or die;
+            $fd = fopen("{$string}err\\error.txt",'a')or die;
             fputs($fd, "{$date} Exception: {$e->getMessage}");
             fclose($fd);
             
@@ -395,8 +396,9 @@ class CForWriteInFile
         {
             Directory.CreateDirectory("err");
         }*/
-
-        $fd = fopen("err\\error.txt", 'a')or die;
+        $temp = "";
+        $temp .= self::$conf_path[8];
+        $fd = fopen("{$temp}err\\error.txt", 'a')or die;
         fputs($fd, "Exception: {$e->getMessage()}");
         fclose($fd);
     }
@@ -441,8 +443,8 @@ $temp = CForWriteInFile::$conf_path[2];
 $result = "";
 try
 {
-    $class1->read_files_ats("{$temp}{$prev_y}{$prev_m}{$prev_d}.txt", $sec_prev, $sec_now, $result);
-    $class1->read_files_ats("{$temp}{$now_y}{$now_m}{$now_d}.txt", $sec_prev, $sec_now, $result);
+    $class1->read_files_ats("{$temp}{$prev_d}{$prev_m}{$prev_y}.txt", $sec_prev, $sec_now, $result);
+    $class1->read_files_ats("{$temp}{$now_d}{$now_m}{$now_y}.txt", $sec_prev, $sec_now, $result);
 
     try
     {

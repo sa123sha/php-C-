@@ -10,3 +10,4 @@
 09.05.2021 19:33:30 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
 09.05.2021 19:35:32 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
 09.05.2021 19:39:28 Exception: Файл 'C:\Users\sa123sha\source\repos\ConsoleApp2\ConsoleApp2\bin\Release\conf.ini' не найден.
+Exception: some textException: some textException: some text
