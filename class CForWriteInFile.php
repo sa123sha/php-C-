@@ -16,7 +16,7 @@ class CForWriteInFile
     public static  $list_tel;
     public static  $conf_path;
     public static  $add_phone;
-    public static  $add_dogov;
+    public static   $add_dogov;
     
     
     public function forSplit($str, $singt)
@@ -379,7 +379,10 @@ class CForWriteInFile
     {
         $fd = fopen(self::$conf_path[7],'w')or die;
         for ($i = 0; $i < count(self::$list_tel); $i++)
-            fputs($fd, self::$list_tel[$i]);
+        {
+            $temp = self::$list_tel[$i];
+            fputs($fd, "{$temp}\n");
+        }
         fclose($fd);
     }
     public function WriteErr($str, Exception $e)
