@@ -335,7 +335,7 @@ class CForWriteInFile
         try
         {
             $fd = fopen(self::$conf_path[1],'r');
-             if(!$fd)throw new Exception("some text");
+             if(!$fd)throw new Error();
             
             while (!feof($fd))
             {

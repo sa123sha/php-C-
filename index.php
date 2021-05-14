@@ -1,5 +1,5 @@
 <?php
-include "class cForWriteInFile.php";
+include "class CForWriteInFile.php";
 
 
 $class1 = new cForWriteInFile();
